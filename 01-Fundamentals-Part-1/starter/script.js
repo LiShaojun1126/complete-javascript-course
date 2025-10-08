@@ -20,3 +20,25 @@ const shaojunAge = nowYear - 2002;
 const yachenAge = nowYear - 2012;
 
 console.log(shaojunAge, yachenAge);
+
+// const markWeight = 78;
+// const markHeight = 1.69;
+
+// const johnWeight = 92;
+// const johnHeight = 1.95;
+
+const markWeight = 95;
+const markHeight = 1.88;
+
+const johnWeight = 85;
+const johnHeight = 1.76;
+
+const markBMI = markWeight / markHeight ** 2;
+const johnBMI = johnWeight / johnHeight ** 2;
+
+const markHigherBMI = markBMI > johnBMI;
+
+console.log("Mark's BMI is " + markBMI);
+console.log("John's BMI is " + johnBMI);
+
+if (markHigherBMI) console.log("Mark has higher BMI");
