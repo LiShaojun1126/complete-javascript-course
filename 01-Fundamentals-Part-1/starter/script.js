@@ -76,3 +76,74 @@
 //   console.log("John's BMI is higher than Mark's.");
 //   console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`);
 // }
+
+// //type conversion
+
+// const inputYear = "2002"; //usually input is a string
+// console.log(Number(inputYear), inputYear);
+// console.log(`In ${Number(inputYear) + 18}, you will be an adult.`);
+// //you cannot always convert a string into a number
+// const name = "shaojun";
+// console.log(Number(name));
+
+// console.log(String(2002), 2002); //first one is a string
+
+// //type coercion: automatically
+// console.log("I am " + 22 + " yeas old"); //+ , convert number to string
+// console.log("23" - "10" + 3); //-, will convert string to number
+
+// //same for * and /
+// console.log(("23" * "2") / "3");
+
+// //only 5 falsy value: 0, '', undefined, null, NaN
+// console.log(`This value in boolean is ${Boolean("")}`); //empty string
+// console.log(`This value in boolean is ${Boolean(0)}`);
+// console.log(`This value in boolean is ${Boolean(undefined)}`);
+// console.log(`This value in boolean is ${Boolean(null)}`);
+// console.log(`This value in boolean is ${Boolean(NaN)}`);
+
+// const money = 0;
+// if (money) {
+//   console.log("Don't spend it all!");
+// } else {
+//   //money = 0 will trigger this else statement
+//   console.log("Earn some!");
+// }
+
+// let height = 0;
+// if (height !== undefined) {
+//   // we cannot use if(height), that will cause a bug
+//   console.log("Height is defined");
+// } else {
+//   console.log("height is undefined");
+// }
+// const age = 18;
+// if (age === 18) console.log("You just turned to an adult!");
+// // === : strict equality operator ==: loose equality operator, try to avoid this.
+
+// //prompt input
+// const favorite = Number(prompt("What is your favorite number?"));
+// // the prompt value is always string, we need to convert it manually
+// if (favorite === 6) {
+//   //we dont need to convert now
+//   console.log("6 is a great number!");
+// }
+
+//boolean operators:
+// const hasDriverLisence = true;
+// const hasGoodVision = true;
+
+// if (hasDriverLisence && hasGoodVision) {
+//   console.log("You are allowed to drive!");
+// } else {
+//   console.log("You are not allowed to drive!");
+// }
+
+// const isTired = true;
+// if (hasDriverLisence && hasGoodVision && !isTired) {
+//   console.log("you are allowed to drive!");
+// } else if (isTired) {
+//   console.log("Have some rest!");
+// } else {
+//   console.log("you are not allowed to drive!");
+// }
