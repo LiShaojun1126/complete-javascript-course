@@ -147,3 +147,91 @@
 // } else {
 //   console.log("you are not allowed to drive!");
 // }
+
+// const dolphinsScore1 = 97;
+// const dolphinsScore2 = 112;
+// const dolphinsScore3 = 81;
+// const dolphinsAverage = (dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3;
+
+// const kolasScore1 = 109;
+// const kolasScore2 = 95;
+// const kolasScore3 = 86;
+// const kolasAverage = (kolasScore1 + kolasScore2 + kolasScore3) / 3;
+// console.log("Dolphins Average is: " + dolphinsAverage);
+// console.log("Kolas Average is: " + kolasAverage);
+
+// if (dolphinsAverage > kolasAverage) {
+//   console.log("Dolphins Win!");
+// } else if (dolphinsAverage < kolasAverage) {
+//   console.log("Kolas Win!");
+// } else {
+//   console.log("Draw!");
+// }
+// //bouns 1:
+
+// if (dolphinsAverage > kolasAverage && dolphinsAverage >= 100) {
+//   console.log("Dolphins Win!");
+// } else if (dolphinsAverage < kolasAverage && kolasAverage >= 100) {
+//   console.log("Kolas Win");
+// } else {
+//   console.log("Draw!");
+// }
+
+// //bonus 2:
+// if (dolphinsAverage > kolasAverage && dolphinsAverage >= 100) {
+//   console.log("Dolphins Win!");
+// } else if (dolphinsAverage < kolasAverage && kolasAverage >= 100) {
+//   console.log("Kolas Win!");
+// } else if (
+//   dolphinsAverage === kolasAverage &&
+//   dolphinsAverage >= 100 &&
+//   kolasAverage >= 100
+// ) {
+//   console.log("Draw!");
+// } else {
+//   console.log("Nobody Wins :(!");
+// }
+
+const day = "Friday";
+
+switch (day) {
+  case "Monday": //day === "Monday"
+    console.log("Physical Lab");
+    break;
+  case "Tuesday":
+    console.log("Math");
+    console.log("Web development");
+    console.log("Physics");
+    break;
+  case "Wednesday":
+    console.log("urban socialology and physics");
+    break;
+  case "Thursday":
+    console.log("math");
+    console.log("web development");
+    break;
+  case "Friday":
+  case "Saturday":
+  case "Sunday":
+    console.log("Enjoy your weekend!");
+    break;
+
+  default:
+    console.log("unvalid day!");
+    break;
+}
+
+if (day === "Monday") {
+  console.log("Physical Lab");
+} else if (day === "Tuesday") {
+  console.log("Math");
+  console.log("Web development");
+  console.log("Physics");
+} else if (day === "Wednesday" || day === "Thursday") {
+  console.log("math");
+  console.log("web development");
+} else if (day === "Friday" || day === "Saturday" || day === "Sunday") {
+  console.log("Enjoy your weekend!");
+} else {
+  console.log("Unvalid Day!");
+}
