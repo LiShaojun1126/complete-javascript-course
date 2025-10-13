@@ -192,46 +192,70 @@
 //   console.log("Nobody Wins :(!");
 // }
 
-const day = "Friday";
+// const day = "Friday";
 
-switch (day) {
-  case "Monday": //day === "Monday"
-    console.log("Physical Lab");
-    break;
-  case "Tuesday":
-    console.log("Math");
-    console.log("Web development");
-    console.log("Physics");
-    break;
-  case "Wednesday":
-    console.log("urban socialology and physics");
-    break;
-  case "Thursday":
-    console.log("math");
-    console.log("web development");
-    break;
-  case "Friday":
-  case "Saturday":
-  case "Sunday":
-    console.log("Enjoy your weekend!");
-    break;
+// switch (day) {
+//   case "Monday": //day === "Monday"
+//     console.log("Physical Lab");
+//     break;
+//   case "Tuesday":
+//     console.log("Math");
+//     console.log("Web development");
+//     console.log("Physics");
+//     break;
+//   case "Wednesday":
+//     console.log("urban socialology and physics");
+//     break;
+//   case "Thursday":
+//     console.log("math");
+//     console.log("web development");
+//     break;
+//   case "Friday":
+//   case "Saturday":
+//   case "Sunday":
+//     console.log("Enjoy your weekend!");
+//     break;
 
-  default:
-    console.log("unvalid day!");
-    break;
-}
+//   default:
+//     console.log("unvalid day!");
+//     break;
+// }
 
-if (day === "Monday") {
-  console.log("Physical Lab");
-} else if (day === "Tuesday") {
-  console.log("Math");
-  console.log("Web development");
-  console.log("Physics");
-} else if (day === "Wednesday" || day === "Thursday") {
-  console.log("math");
-  console.log("web development");
-} else if (day === "Friday" || day === "Saturday" || day === "Sunday") {
-  console.log("Enjoy your weekend!");
-} else {
-  console.log("Unvalid Day!");
-}
+// if (day === "Monday") {
+//   console.log("Physical Lab");
+// } else if (day === "Tuesday") {
+//   console.log("Math");
+//   console.log("Web development");
+//   console.log("Physics");
+// } else if (day === "Wednesday" || day === "Thursday") {
+//   console.log("math");
+//   console.log("web development");
+// } else if (day === "Friday" || day === "Saturday" || day === "Sunday") {
+//   console.log("Enjoy your weekend!");
+// } else {
+//   console.log("Unvalid Day!");
+// }
+
+// //expressions : values
+// //statements: actions
+
+//conditional (ternary)operator: another way to write if-else statement
+// const age = 23;
+
+// age > 18 ? console.log("I like to drive!") : console.log("I like riding bike");
+
+// //operator is a XPathExpression, which means it can produce value
+
+// const drink = age > 18 ? "wine" : "water";
+
+// console.log(drink);
+
+// console.log(`I like to drink ${age > 18 ? "wine" : "water"}`);
+
+// //code challenge 4:
+// const bill = 430;
+// const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+// console.log(
+//   `The bill was ${bill}, the tip was ${tip}, and the total was ${bill + tip}.`
+// );
