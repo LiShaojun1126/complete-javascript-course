@@ -82,21 +82,103 @@
 
 // console.log(yearUntilRetirement(1994, "Shaojun"));
 
-const average = (score1, score2, score3) => (score1 + score2 + score3) / 3;
-const averageDolphis = average(85, 54, 41);
-const averageKoalas = average(23, 34, 27);
+// const average = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+// const averageDolphis = average(85, 54, 41);
+// const averageKoalas = average(23, 34, 27);
 
-const checkWinner = (aveDophins, aveKoalas) => {
-  if (aveDophins >= 2 * aveKoalas) {
-    console.log(`Dolphins win (${aveDophins} vs. ${aveKoalas}).`);
-    return "Dophins";
-  } else if (aveKoalas >= 2 * aveDophins) {
-    console.log(`Koalas win (${aveKoalas} vs. ${aveDophins}).`);
-    return "Koalas";
-  } else {
-    console.log("Nobody wins :(");
-    return -1;
-  }
-};
+// const checkWinner = (aveDophins, aveKoalas) => {
+//   if (aveDophins >= 2 * aveKoalas) {
+//     console.log(`Dolphins win (${aveDophins} vs. ${aveKoalas}).`);
+//     return "Dophins";
+//   } else if (aveKoalas >= 2 * aveDophins) {
+//     console.log(`Koalas win (${aveKoalas} vs. ${aveDophins}).`);
+//     return "Koalas";
+//   } else {
+//     console.log("Nobody wins :(");
+//     return -1;
+//   }
+// };
 
-const winner = checkWinner(averageDolphis, averageKoalas);
+// const winner = checkWinner(averageDolphis, averageKoalas);
+
+//arrays
+// const friends = ["Micheal", "Peter", "Steven"];
+// console.log(friends);
+
+//const year = new Array(1991, 2002, 2008, 2014);
+
+// console.log(friends[0]);
+// console.log(friends[2]);
+
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]); // get the last element
+
+// //we can mutate array even is a const, only primitive variables are not mutable.
+
+// friends[2] = "Java";
+// console.log(friends);
+
+// //we cannot reassign the array, but we can add, delete, and mutate.
+
+// const firstName = "shaojun";
+
+// //we can have any type of variables in an array
+// const shaojun = [firstName, "li", 2002, "student", friends];
+// console.log(shaojun);
+
+// const calcAge = (birthYear) => 2025 - birthYear;
+
+// const years = [1991, 2002, 2008, 2012];
+
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[3])];
+// console.log(ages);
+
+//add element
+// const friends = ["Micheal", "Peter", "Steven"];
+// const newLength = friends.push("Jay"); //this method returns a value of new array
+// console.log(friends);
+// console.log(`The length of new array is ${newLength}`);
+
+// friends.unshift("John"); //add element at the beginning of the array
+// console.log(friends);
+
+// //remove element
+
+// const popped = friends.pop(); //remove and return the last element
+// console.log(friends, popped);
+
+// const shifted = friends.shift();
+// console.log(friends);
+// console.log(shifted);
+
+// console.log(friends.indexOf("Steven"));
+// console.log(friends.indexOf("Shaojun")); //return -1 when this element is not there
+
+// console.log(friends.includes("Micheal")); //return boolean value
+// console.log(friends.includes("Jay"));
+
+// if (friends.includes("Peter")) {
+//   console.log("You are Peter's friend!");
+// }
+
+//code challenge:
+
+// const calcTip = (bill) => {
+//   if (bill >= 50 && bill <= 300) {
+//     return bill * 0.15;
+//   } else {
+//     return bill * 0.2;
+//   }
+
+//   //or return bill >= 50 && bill <= 300 ? bill * 0.15 :bill * 0.2;
+// };
+
+// console.log(calcTip(100));
+
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(bills);
+// console.log(tips);
+// console.log(total);
