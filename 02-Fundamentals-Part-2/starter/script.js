@@ -182,3 +182,210 @@
 // console.log(bills);
 // console.log(tips);
 // console.log(total);
+
+// const Shaojun = {
+//   firstName: "Shaojun",
+//   lastName: "Li",
+//   birthYear: 2002,
+//   job: "student",
+//   friends: ["Micheal", "Peter", "Steven"],
+// };
+// //object is unordered, array is ordered.
+// console.log(Shaojun.lastName);
+// console.log(Shaojun["lastName"]);
+
+// const nameKey = "Name";
+// //we can put any expression in the squared bracket
+// console.log(Shaojun["first" + nameKey]);
+// console.log(Shaojun["last" + nameKey]);
+
+// const interestedIn = prompt(
+//   "What do you want to know about Shaojun? Choose from firstName, lastName, birthYear, job, or friends."
+// );
+// console.log(interestedIn);
+// console.log(Shaojun[interestedIn]);
+// //if it try to access a property that doesn't exist, it will return undefine
+
+// if (Shaojun[interestedIn]) {
+//   console.log(Shaojun[interestedIn]);
+// } else {
+//   console.log(
+//     "Wrong request! Choose from firstName, lastName, birthYear, job, or friends."
+//   );
+// }
+
+// Shaojun.location = "USA";
+// Shaojun["school"] = "lagcc";
+// console.log(Shaojun);
+
+// console.log(
+//   `${Shaojun.firstName} has ${Shaojun.friends.length} friends, and his best friend is ${Shaojun.friends[0]}`
+// );
+
+// const Shaojun = {
+//   firstName: "Shaojun",
+//   lastName: "Li",
+//   birthYear: 2002,
+//   job: "student",
+//   friends: ["Micheal", "Peter", "Steven"],
+//   hasDriverLicense: true,
+
+//   //we can add function expression as property: value
+//   //function is a value, and function inside a object is called method
+//   //   calcAge: function (birthYear) {
+//   //     return 2025 - birthYear;
+//   //   },
+
+//   //OOP:
+//   //   calcAge: function () {
+//   //     return 2025 - this.birthYear;
+//   //   },
+
+//   calcAge: function () {
+//     this.age = 2025 - this.birthYear;
+//     return this.age;
+//   },
+
+//   //challenge:
+//   //here we need to use this.calcAge() because we cannot assume we call calcAge before
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()}-year old ${
+//       this.job
+//     }, he as ${this.hasDriverLicense ? "a" : "no"} diver license.`;
+//   },
+// };
+
+// console.log(Shaojun.calcAge());
+// console.log(Shaojun["calcAge"]());
+// console.log(Shaojun.age);
+// console.log(Shaojun.getSummary());
+
+//code challenge
+// const Mark = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     this.BMI = this.mass / this.height ** 2;
+//     return this.BMI;
+//   },
+// };
+
+// const John = {
+//   fullName: "John Smith",
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function () {
+//     this.BMI = this.mass / this.height ** 2;
+//     return this.BMI;
+//   },
+// };
+
+// if (Mark.calcBMI() >= John.calcBMI()) {
+//   console.log(
+//     `${Mark.fullName}'s BMI(${Mark.BMI}) is higher than ${John.fullName}'s (${John.BMI}).`
+//   );
+// } else {
+//   console.log(
+//     `${John.fullName}'s BMI(${John.BMI}) is higher than ${Mark.fullName}'s(${Mark.BMI}).`
+//   );
+// }
+
+// Mark.BMI > John.BMI ? console.log("Mark") : console.log("John");
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`This is my repetition ${i}.`);
+// }
+
+// const shaojun = [
+//   "Shaojun",
+//   "Li",
+//   2002,
+//   "student",
+//   ["Michael", "Peter", "Steven"],
+//   true,
+// ];
+
+// const types = []; //create an empty array
+
+// for (let i = 0; i < shaojun.length; i++) {
+//   console.log(shaojun[i], typeof shaojun[i]);
+//   types.push(typeof shaojun[i]);
+//   //or types[i] = typeof shaojun[i];
+// }
+
+// console.log(types);
+
+// const years = [1991, 2002, 2008, 2012];
+// const age = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   age.push(2025 - years[i]);
+// }
+// console.log(age);
+
+// console.log("only string");
+// for (let i = 0; i < shaojun.length; i++) {
+//   if (typeof shaojun[i] !== "string") {
+//     continue;
+//   }
+//   console.log(shaojun[i], typeof shaojun[i]);
+// }
+
+// console.log("before number");
+// for (let i = 0; i < shaojun.length; i++) {
+//   if (typeof shaojun[i] === "number") {
+//     break;
+//   }
+//   console.log(shaojun[i], typeof shaojun[i]);
+// }
+
+// //loop backwards:
+// for (let i = shaojun.length - 1; i >= 0; i--) {
+//   console.log(shaojun[i]);
+// }
+
+// for (let exercise = 1; exercise < 5; exercise++) {
+//   console.log(`-----Starting exercise ${exercise}------`);
+
+//   for (let i = 1; i < 6; i++) {
+//     console.log(`Exercise: ${exercise}, lifting weights repetiion ${i} !`);
+//   }
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+// while (dice !== 6) {
+//   console.log(`you rolled ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+
+//   if (dice === 6) console.log("You rolled 6! The loop is about to end!");
+// }
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const calcTip = (bill) => {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+    //   tips.push(calcTip(bills[i]));
+    //   totals.push(tips[i] + bills[i]);
+    //to reduce using array
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+}
+console.log(tips, totals);
+
+const calcAverage = (arr) => {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+};
+console.log(calcAverage(totals));
